@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes">
+    <style>
+        body {
+            zoom: 1.5;
+            /* Increase this value to zoom in */
+            margin: 0;
+            /* Remove default margin */
+            padding: 0;
+            /* Remove default padding */
+            display: flex;
+            justify-content: center;
+            /* Take full viewport height */
+        }
+
+        form {
+            margin: 0;
+            /* Remove form margin */
+        }
+    </style>
+    <title>reCAPTCHA</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: center; margin-left: 100px;">
+        <form method="POST">
+            <div class="h-captcha" data-sitekey="148a02e0-d1c6-459a-bb40-8e64c954a1a6" data-callback="captchaCallback">
+            </div>
+            <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+        </form>
+    </div>
+
+    <script>
+        function captchaCallback(response) {
+            if (typeof Captcha !== "undefined") {
+                Captcha.postMessage(response);
+            }
+        }
+    </script>
+</body>
+
+</html>

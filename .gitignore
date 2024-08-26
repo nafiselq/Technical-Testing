@@ -1,0 +1,80 @@
+# compiled output
+/backend/dist
+/backend/node_modules
+
+# Logs
+/backend/logs
+/backend/*.log
+/backend/npm-debug.log*
+/backend/pnpm-debug.log*
+/backend/yarn-debug.log*
+/backend/yarn-error.log*
+/backend/lerna-debug.log*
+
+# OS
+/backend/.DS_Store
+
+# Tests
+/backend/coverage
+/backend/.nyc_output
+
+# IDEs and editors
+/backend/.idea
+/backend/.project
+/backend/.classpath
+/backend/.c9/
+/backend/*.launch
+/backend/.settings/
+/backend/*.sublime-workspace
+
+# IDE - VSCode
+/backend/.vscode/*
+/backend/!.vscode/settings.json
+/backend/!.vscode/tasks.json
+/backend/!.vscode/launch.json
+/backend/!.vscode/extensions.json
+
+
+# Miscellaneous
+/mobileapps/*.class
+/mobileapps/*.log
+/mobileapps/*.pyc
+/mobileapps/*.swp
+/mobileapps/.DS_Store
+/mobileapps/.atom/
+/mobileapps/.buildlog/
+/mobileapps/.history
+/mobileapps/.svn/
+/mobileapps/migrate_working_dir/
+
+# IntelliJ related
+/mobileapps/*.iml
+/mobileapps/*.ipr
+/mobileapps/*.iws
+/mobileapps/.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+/mobileapps/**/doc/api/
+/mobileapps/**/ios/Flutter/.last_build_id
+/mobileapps/.dart_tool/
+/mobileapps/.flutter-plugins
+/mobileapps/.flutter-plugins-dependencies
+/mobileapps/.pub-cache/
+/mobileapps/.pub/
+/mobileapps/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/mobileapps/android/app/debug
+/mobileapps/android/app/profile
+/mobileapps/android/app/release
